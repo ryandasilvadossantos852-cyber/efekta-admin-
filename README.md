@@ -1,2 +1,0 @@
-# efekta-admin-
-script 
