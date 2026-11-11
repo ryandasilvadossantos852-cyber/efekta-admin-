@@ -1,0 +1,256 @@
+
+/* =================================
+   EFEKTA ADMIN - IDENTIDADE VISUAL
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0f172a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #1e293b;
+    text-align: center;
+    padding: 28px 15px;
+    border-bottom: 1px solid #334155;
+}
+
+header h1 {
+    color: #34d399;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ESTATÍSTICAS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background: #1e293b;
+    padding: 18px 8px;
+    text-align: center;
+    border-radius: 13px;
+    border: 1px solid #334155;
+}
+
+.stat span {
+    color: #34d399;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.stat p {
+    color: #94a3b8;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+/* CARTÕES */
+
+.panel,
+.lessons-section {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 17px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 19px;
+    margin-bottom: 18px;
+    color: #f8fafc;
+}
+
+/* CAMPOS */
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #34d399;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* BOTÕES */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 12px;
+    background: #10b981;
+    color: #022c22;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.secondary {
+    background: #475569;
+    color: white;
+}
+
+.export {
+    background: #334155;
+    color: #34d399;
+}
+
+/* CARTÕES DAS AULAS */
+
+.lesson {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 13px;
+    padding: 17px;
+    margin-top: 13px;
+}
+
+.lesson h3 {
+    color: #34d399;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.lesson p {
+    color: #cbd5e1;
+    font-size: 13px;
+    margin: 9px 0;
+    overflow-wrap: anywhere;
+}
+
+/* ETIQUETAS DE NÍVEL */
+
+.level-tag {
+    display: inline-block;
+    background: #064e3b;
+    color: #6ee7b7;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+/* BOTÕES DE AÇÃO */
+
+.actions {
+    display: flex;
+    gap: 9px;
+}
+
+.actions button {
+    flex: 1;
+    font-size: 12px;
+}
+
+.delete {
+    background: #991b1b;
+    color: white;
+}
+
+/* MENSAGENS */
+
+.empty {
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    padding: 25px;
+    font-size: 12px;
+}
+
+footer p {
+    margin-top: 6px;
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 380px) {
+    main {
+        padding: 12px;
+    }
+
+    .panel,
+    .lessons-section {
+        padding: 15px;
+    }
+
+    .stat span {
+        font-size: 21px;
+    }
+
+    .stat p {
+        font-size: 10px;
+    }
+}
