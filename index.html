@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EFEKTA ADMIN</title>
+
+    <meta name="theme-color" content="#0f172a">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>EFEKTA</h1>
+        <p>Administração de aulas de inglês</p>
+    </header>
+
+    <main>
+
+        <section class="stats">
+            <div class="stat">
+                <span id="total">0</span>
+                <p>Total de aulas</p>
+            </div>
+
+            <div class="stat">
+                <span id="basic">0</span>
+                <p>Básico</p>
+            </div>
+
+            <div class="stat">
+                <span id="intermediate">0</span>
+                <p>Intermediário</p>
+            </div>
+        </section>
+
+        <section class="panel">
+
+            <h2 id="form-title">Criar nova aula</h2>
+
+            <form id="lesson-form">
+
+                <input type="hidden" id="lesson-id">
+
+                <label for="title">Título da aula</label>
+                <input id="title" required
+                    placeholder="Ex: Cumprimentos">
+
+                <label for="level">Nível</label>
+                <select id="level">
+                    <option value="Básico">Básico</option>
+                    <option value="Intermediário">Intermediário</option>
+                    <option value="Avançado">Avançado</option>
+                </select>
+
+                <label for="english">Frase em inglês</label>
+                <input id="english" required
+                    placeholder="How are you?">
+
+                <label for="portuguese">Tradução</label>
+                <input id="portuguese" required
+                    placeholder="Como você está?">
+
+                <label for="objective">Objetivo da aula</label>
+                <textarea id="objective"
+                    placeholder="O que o aluno vai aprender?"></textarea>
+
+                <button type="submit" id="save-btn">
+                    + Salvar aula
+                </button>
+
+                <button type="button" id="cancel-btn"
+                    class="secondary" hidden>
+                    Cancelar edição
+                </button>
+
+            </form>
+        </section>
+
+        <section class="lessons-section">
+
+            <h2>Minhas aulas</h2>
+
+            <input id="search"
+                placeholder="Pesquisar aulas...">
+
+            <select id="filter">
+                <option value="">Todos os níveis</option>
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+            </select>
+
+            <div id="lesson-list"></div>
+
+            <button id="export-btn" class="export">
+                Exportar aulas
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        EFEKTA ADMIN © 2026
+        <p>Seu inglês começa aqui.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
